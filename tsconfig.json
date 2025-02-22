@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                   // Matches Node.js v22's native support for ES2022
+    "module": "NodeNext",                 // For Node.js v22's ESM and CommonJS interop
+    "moduleResolution": "NodeNext",       // Aligns with Node.js module resolution
+    "outDir": "./dist",                   // Output directory for compiled JS
+    "rootDir": "./src",                   // Source directory for TS files
+    "strict": true,                       // Enables all strict type-checking options
+    "esModuleInterop": true,                        // Better interop with CommonJS modules
+    "skipLibCheck": true,                           // Speeds up compilation by skipping lib checks
+    "forceConsistentCasingInFileNames": true,       // Prevents case-sensitivity issues
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules without exports
+    "sourceMap": true,                  // Generates source maps for debugging
+    "resolveJsonModule": true,          // Allows importing JSON files
+    "isolatedModules": false,           // Set to false since Node.js doesn't need this restriction
+    "noEmitOnError": true               // Prevents emitting JS if there are TS errors
+  },
+  "include": ["src/**/*"],              // Include all TS files in src/
+  "exclude": ["node_modules", "dist"]   // Exclude build artifacts and dependencies
+}
